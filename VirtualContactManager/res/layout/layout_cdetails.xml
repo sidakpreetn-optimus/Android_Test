@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+	android:id="@+id/LinearLayoutContacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageViewContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/default_image"
+        android:layout_margin="20dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Select Image" />
+        
+	<Spinner
+        android:id="@+id/spinnerContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextFNameContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Enter First Name"
+        android:ems="10" >
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextLNameContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"      
+		android:hint="Enter Last Name"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNoContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"     
+        android:ems="10"
+		android:hint="Enter Phone Number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/buttonAddContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"        
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/buttonEditContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_margin="15dp"
+        android:layout_gravity="center"		
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/buttonDeleteContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"             
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/buttonSaveContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"        
+        android:layout_gravity="center"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/buttonCancelContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="Cancel" />
+
+</LinearLayout>
+    
+</ScrollView>
